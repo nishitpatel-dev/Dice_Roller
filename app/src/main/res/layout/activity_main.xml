@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity2">
+    
+<!--    <TextView-->
+<!--        android:id="@+id/result_text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="1"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textColor="@color/purple_500"-->
+
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/dice_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/dice_1"
+        tools:src="@drawable/dice_3"
+        />
+
+<!--    you can also use android:src instead of app:srcCompat -->
+<!--   tools:src = "@drawable/dice_3" is only for preview, at the runtime this line will not be executed and android:src will executed-->
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
